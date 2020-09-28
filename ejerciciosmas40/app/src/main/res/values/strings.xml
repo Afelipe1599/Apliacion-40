@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">ejerciciosmas40</string>
+    <string name="app_name">+40</string>
+    <string name="welcome">Bienvenido a +40</string>
+    <string name="welcome_img">Imagen de bienvenida</string>
+    <string name="welcome_button">Siguiente</string>
+    <string name="second_activity_str">El pepe</string>
+    <string name="user_name_str">Nombre completo</string>
+    <string name="user_age_str">Edad</string>
+    <string name="user_height_str">Altura(cm)</string>
+    <string name="user_weigth_str">Peso(Kg)</string>
+    <string name="welcome_msg">Un mensaje de bienvenida importante y lambon</string>
+    <string name="exercise_freq_str">¿Con que frecuencia realizas ejercicio?</string>
+    <string-array name="exercise_freq_array">
+        <item>No me gusta subir escaleras</item>
+        <item>No me gusta caminar</item>
+        <item>No hago ejercicio</item>
+        <item>De vez en cuando hago ejercicio</item>
+        <item>Hago ejercicio regularmente</item>
+        <item>Tiro 5 pajas al dia</item>
+    </string-array>
 </resources>
