@@ -25,6 +25,9 @@
         <activity android:name=".ExerciseFrequencyActivity"
             android:parentActivityName=".UserPersonalDataActivity"/>
 
+        <activity android:name=".ExerciseTypeActivity"
+            android:parentActivityName=".ExerciseFrequencyActivity"/>
+
     </application>
 
 </manifest>

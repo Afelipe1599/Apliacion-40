@@ -11,9 +11,10 @@ public class PersonaDAO {
 
     public PersonaDAO(Context context){
         dataBaseOpenHelper = new DataBaseOpenHelper(context);
+        db = dataBaseOpenHelper.getWritableDatabase();
     }
 
-    public  long insertarPersona(Persona persona){
+    public long insertarPersona(Persona persona){
         ContentValues registro = new ContentValues();
         registro.put(UtilitiesDataBase.TablaPersona.NOMBRE, persona.getNombre());
         registro.put(UtilitiesDataBase.TablaPersona.EDAD, persona.getEdad());
@@ -23,8 +24,7 @@ public class PersonaDAO {
         registro.put(UtilitiesDataBase.TablaPersona.DIFICULTAD, persona.getDificultad());
         registro.put(UtilitiesDataBase.TablaPersona.EJ_DESEADO, persona.getEj_deseado());
         registro.put(UtilitiesDataBase.TablaPersona.EQUIPO, persona.isEquipo());
-
-        long id = db.insert(UtilitiesDataBase.TablaPersona.TABLE_NAME,UtilitiesDataBase.TablaPersona.ID, registro);
+        long id = db.insert(UtilitiesDataBase.TablaPersona.TABLE_NAME, UtilitiesDataBase.TablaPersona.ID, registro);
         db.close();
         return id;
     }

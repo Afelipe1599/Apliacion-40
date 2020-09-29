@@ -10,6 +10,7 @@
     <string name="user_weigth_str">Peso(Kg)</string>
     <string name="welcome_msg">Un mensaje de bienvenida importante y lambon</string>
     <string name="exercise_freq_str">¿Con que frecuencia realizas ejercicio?</string>
+
     <string-array name="exercise_freq_array">
         <item>No me gusta subir escaleras</item>
         <item>No me gusta caminar</item>
@@ -18,4 +19,22 @@
         <item>Hago ejercicio regularmente</item>
         <item>Tiro 5 pajas al dia</item>
     </string-array>
+    
+    
+    <string name="exercise_type_str">Tipo de ejercicio deseado</string>
+    <string-array name="exercise_type_array">
+        <item>Tradicional</item>
+        <item>Baile</item>
+    </string-array>
+
+    <string name="dificulty_str">Dificultad deseada</string>
+    <string-array name="dificulty_array">
+        <item>Principiante</item>
+        <item>Intermedio</item>
+        <item>Avanzado</item>
+    </string-array>
+
+    <string name="equipment_str">Poseo implementos de ejercicio</string>
+    <string name="finished_button">Registrar datos</string>
+    
 </resources>

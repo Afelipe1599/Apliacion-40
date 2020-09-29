@@ -17,11 +17,11 @@ public final class UtilitiesDataBase {
         static final String EQUIPO="equipo";
 
 
-        static final String CREATE_TABLE_PERSONA="CREATE TABLE "+TABLE_NAME+" ("+ID+"INTEGER PRIMARY KEY AUTOINCREMENT, "+
+        static final String CREATE_TABLE_PERSONA="CREATE TABLE "+TABLE_NAME+" ("+ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
                                                   NOMBRE+" TEXT, "+ALTURA+" INTEGER, "+FRECUENCIA+" INTEGER, "+EDAD+" INTEGER, "+DIFICULTAD+" TEXT, "+
-                                                  EJ_DESEADO+" TEXT, "+PESO+" INTEGER, "+EQUIPO+"BOOLEAN)";
+                                                  EJ_DESEADO+" TEXT, "+PESO+" INTEGER, "+EQUIPO+" BOOLEAN);";
 
-        static  final  String CONSULTAR_ALL_TABLE="SELECT * FROM"+TABLE_NAME;
+        static  final  String CONSULTAR_ALL_TABLE="SELECT * FROM "+TABLE_NAME;
 
     }
 
