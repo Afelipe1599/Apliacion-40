@@ -8,8 +8,10 @@ import android.widget.EditText;
 import com.example.ejerciciosmas40.Persona;
 
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
-public class UserPersonalDataActivity extends Activity {
+public class UserPersonalDataActivity extends FragmentActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +19,7 @@ public class UserPersonalDataActivity extends Activity {
     }
 
     public void callExerciseFreqActivity(View view){
-        Intent intent = new Intent(this, ExerciseFrequencyActivity.class);
+       /* Intent intent = new Intent(this, ExerciseFrequencyActivity.class);
 
         //Getting user data from this view
         //Name
@@ -41,6 +43,6 @@ public class UserPersonalDataActivity extends Activity {
         intent.putExtra("user_weight", user_weight);
         intent.putExtra("user_age", user_age);
 
-        startActivity(intent);
+        startActivity(intent);*/
     }
 }

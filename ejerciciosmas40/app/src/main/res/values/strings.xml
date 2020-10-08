@@ -1,30 +1,29 @@
 <resources>
     <string name="app_name">+40</string>
-    <string name="welcome">Bienvenido a +40</string>
-    <string name="welcome_img">Imagen de bienvenida</string>
-    <string name="welcome_button">Siguiente</string>
-    <string name="second_activity_str">El pepe</string>
+    <string name="next_button">Siguiente</string>
     <string name="user_name_str">Nombre completo</string>
     <string name="user_age_str">Edad</string>
     <string name="user_height_str">Altura(cm)</string>
     <string name="user_weigth_str">Peso(Kg)</string>
-    <string name="welcome_msg">Un mensaje de bienvenida importante y lambon</string>
+    <string name="welcome_msg">+40 es una aplicación para realizar ejercicio en casa orientada en las necesidades del usuario.</string>
+    <string name="welcome_title">Bienvenido a +40</string>
     <string name="exercise_freq_str">¿Con que frecuencia realizas ejercicio?</string>
+    <string name="welcome">Mensaje de bienvenida</string>
 
     <string-array name="exercise_freq_array">
-        <item>No me gusta subir escaleras</item>
-        <item>No me gusta caminar</item>
-        <item>No hago ejercicio</item>
-        <item>De vez en cuando hago ejercicio</item>
-        <item>Hago ejercicio regularmente</item>
-        <item>Tiro 5 pajas al dia</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
-    
-    
+
+
     <string name="exercise_type_str">Tipo de ejercicio deseado</string>
     <string-array name="exercise_type_array">
         <item>Tradicional</item>
         <item>Baile</item>
+        <item>Yoga</item>
     </string-array>
 
     <string name="dificulty_str">Dificultad deseada</string>
@@ -36,5 +35,6 @@
 
     <string name="equipment_str">Poseo implementos de ejercicio</string>
     <string name="finished_button">Registrar datos</string>
-    
+
+
 </resources>
