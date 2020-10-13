@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".InformationFragment">
+    tools:context=".InformationFragment"
+    android:id="@+id/information_fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
@@ -36,7 +37,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                android:text="Mensaje de prueba para el titulo de la tarjeta"
+                android:text="@string/welcome_title"
                 android:gravity="center_horizontal"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
@@ -52,10 +53,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit urna sociosqu semper, est fusce at vel mollis scelerisque inceptos metus maecenas mauris, cras aptent neque nisl eleifend sed ultrices sapien etiam." />
-
+                android:text="@string/welcome_msg"/>
             <Button
-                android:id="@+id/nextButton"
+                android:id="@+id/informationFragmentButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/next_button"

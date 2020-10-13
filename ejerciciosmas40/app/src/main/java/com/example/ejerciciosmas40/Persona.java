@@ -30,7 +30,7 @@ public class Persona {
         return edad;
     }
 
-    public void setEdad() {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
@@ -78,7 +78,7 @@ public class Persona {
         this.equipo = equipo;
     }
 
-    public Persona(int id, int altura, int frecuencia,int edad, String nombre, String dificultad, String ej_deseado, float peso, boolean equipo) {
+    public Persona(int id, int altura, int frecuencia, int edad, String nombre, String dificultad, String ej_deseado, float peso, boolean equipo) {
         this.id = id;
         this.altura = altura;
         this.frecuencia = frecuencia;

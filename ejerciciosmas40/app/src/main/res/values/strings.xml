@@ -7,7 +7,7 @@
     <string name="user_weigth_str">Peso(Kg)</string>
     <string name="welcome_msg">+40 es una aplicación para realizar ejercicio en casa orientada en las necesidades del usuario.</string>
     <string name="welcome_title">Bienvenido a +40</string>
-    <string name="exercise_freq_str">¿Con que frecuencia realizas ejercicio?</string>
+    <string name="exercise_freq_str">¿Cuantas veces a la semana realiza ejercicio?</string>
     <string name="welcome">Mensaje de bienvenida</string>
 
     <string-array name="exercise_freq_array">
@@ -16,14 +16,6 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-    </string-array>
-
-
-    <string name="exercise_type_str">Tipo de ejercicio deseado</string>
-    <string-array name="exercise_type_array">
-        <item>Tradicional</item>
-        <item>Baile</item>
-        <item>Yoga</item>
     </string-array>
 
     <string name="dificulty_str">Dificultad deseada</string>
@@ -35,6 +27,10 @@
 
     <string name="equipment_str">Poseo implementos de ejercicio</string>
     <string name="finished_button">Registrar datos</string>
-
+    
+    <string name="exercise_type_str">¿Cual tema te gustaria trabajar? Selecciona una de las siguientes opciones:</string>
+    <string name="aerobicos_str">Aerobicos</string>
+    <string name="yoga_str">Yoga</string>
+    <string name="genericos_str">Genericos</string>
 
 </resources>

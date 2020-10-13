@@ -1,6 +1,5 @@
 package com.example.ejerciciosmas40;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,15 +7,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link InformationFragment#newInstance} factory method to
+ * Use the {@link ExerciseCategoryFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class InformationFragment extends Fragment {
+public class ExerciseCategoryFragment extends Fragment {
+    View view;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,10 +25,7 @@ public class InformationFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    Button nextButton;
-    View view;
-
-    public InformationFragment() {
+    public ExerciseCategoryFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +35,11 @@ public class InformationFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment InformationFragment.
+     * @return A new instance of fragment ExerciseCategoryFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static InformationFragment newInstance(String param1, String param2) {
-        InformationFragment fragment = new InformationFragment();
+    public static ExerciseCategoryFragment newInstance(String param1, String param2) {
+        ExerciseCategoryFragment fragment = new ExerciseCategoryFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,18 +60,8 @@ public class InformationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_information, container, false);
+        view = inflater.inflate(R.layout.fragment_exercise_category, container, false);
 
-        nextButton = view.findViewById(R.id.informationFragmentButton);
-
-        nextButton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-               MainActivity activity = (MainActivity)getActivity();
-               activity.onClick(view);
-            }
-        });
         return view;
     }
 }
