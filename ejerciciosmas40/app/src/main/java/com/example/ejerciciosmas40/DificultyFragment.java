@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Spinner;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,7 +16,10 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class DificultyFragment extends Fragment {
-
+    View view;
+    Button dificultyFragmentButton;
+    Spinner dificultySpinner;
+    MainActivity mainActivity;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -59,6 +64,18 @@ public class DificultyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dificulty, container, false);
+         view = inflater.inflate(R.layout.fragment_dificulty, container, false);
+         dificultyFragmentButton = view.findViewById(R.id.dificultyFragmentButton);
+         dificultySpinner = view.findViewById(R.id.dificultySpinner);
+         mainActivity = (MainActivity)getActivity();
+         dificultyFragmentButton.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 String dificulty = dificultySpinner.getSelectedItem().toString();
+                 mainActivity.persona.setDificultad(dificulty);
+                 mainActivity.onClick(view);
+             }
+         });
+         return view;
     }
 }

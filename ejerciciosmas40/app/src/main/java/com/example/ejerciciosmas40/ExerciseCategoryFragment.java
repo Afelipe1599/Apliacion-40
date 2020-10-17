@@ -7,6 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +20,11 @@ import android.view.ViewGroup;
  */
 public class ExerciseCategoryFragment extends Fragment {
     View view;
+    RadioButton radioButtonYoga, radioButtonAerobicos, radioButtonGenericos;
+    TextView textViewSeleccion;
+    Button finishButton;
+    MainActivity mainActivity;
+    String tipoEjercicio;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +71,45 @@ public class ExerciseCategoryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_exercise_category, container, false);
+        radioButtonAerobicos = view.findViewById(R.id.radioButtonAerobicos);
+        radioButtonGenericos = view.findViewById(R.id.radioButtonGenericos);
+        radioButtonYoga = view.findViewById(R.id.radioButtonYoga);
+        textViewSeleccion = view.findViewById(R.id.radioButtonSelectionTextView);
+        finishButton = view.findViewById(R.id.exerciseTypeButton);
+        mainActivity = (MainActivity)getActivity();
+
+
+        radioButtonYoga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textViewSeleccion.setText(R.string.yoga_str);
+                tipoEjercicio = "Yoga";
+
+            }
+        });
+        radioButtonAerobicos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textViewSeleccion.setText(R.string.aerobicos_str);
+                tipoEjercicio = "Aerobicos";
+            }
+        });
+
+        radioButtonGenericos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textViewSeleccion.setText(R.string.genericos_str);
+                tipoEjercicio = "Genericos";
+            }
+        });
+
+        finishButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainActivity.persona.setEj_deseado(tipoEjercicio);
+                mainActivity.onClick(view);
+            }
+        });
 
         return view;
     }

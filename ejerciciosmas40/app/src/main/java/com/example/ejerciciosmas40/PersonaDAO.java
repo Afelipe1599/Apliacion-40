@@ -2,6 +2,7 @@ package com.example.ejerciciosmas40;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class PersonaDAO {
@@ -27,6 +28,16 @@ public class PersonaDAO {
         long id = db.insert(UtilitiesDataBase.TablaPersona.TABLE_NAME, UtilitiesDataBase.TablaPersona.ID, registro);
         db.close();
         return id;
+    }
+
+    public boolean isPersonaRegistered(){
+        String query = "SELECT count(*) FROM "+UtilitiesDataBase.TablaPersona.TABLE_NAME;
+        Cursor cursor = db.rawQuery(query, null);
+        if(cursor.moveToFirst()){
+            int count = cursor.getInt(0);
+            if (count > 0) return true;
+        }
+        return false;
     }
 
     

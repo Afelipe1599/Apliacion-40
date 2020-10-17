@@ -32,45 +32,56 @@
                 android:layout_marginBottom="15dp"
                 android:textColor="@color/primaryText"/>
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:gravity="center">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:text="@string/aerobicos_str"
-                    android:gravity="center"
-                    android:background="@drawable/semi_pill"
-                    android:textStyle="bold"
-                    android:textColor="#ffffff"
-                    android:layout_marginBottom="15dp"/>
+                <RadioButton
+                    android:id="@+id/radioButtonGenericos"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/genericos_button"
+                    android:button="@null" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:text="@string/yoga_str"
-                    android:gravity="center"
-                    android:background="@drawable/semi_pill"
-                    android:textStyle="bold"
-                    android:textColor="#ffffff"
-                    android:layout_marginBottom="15dp"/>
+                <RadioButton
+                    android:id="@+id/radioButtonYoga"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/yoga_button"
+                    android:button="@null" />
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="80dp"
-                    android:layout_height="30dp"
-                    android:text="@string/genericos_str"
-                    android:gravity="center"
-                    android:background="@drawable/semi_pill"
-                    android:textStyle="bold"
-                    android:textColor="#ffffff"
-                    android:layout_marginBottom="15dp"/>
-            </LinearLayout>
+                <RadioButton
+                    android:id="@+id/radioButtonAerobicos"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/aerobicos_button"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radioButtonSelectionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@null"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/exerciseTypeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:background="@drawable/rounded_corners"
+                android:text="@string/next_button"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

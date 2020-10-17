@@ -15,8 +15,6 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db){
         db.execSQL(UtilitiesDataBase.TablaPersona.CREATE_TABLE_PERSONA);
-
-        insert(db, 164,2,21, "Andres","media", "normal", 50, false);
     }
 
     private void insert(SQLiteDatabase db,int altura, int frecuencia,int edad, String nombre, String dificultad, String ej_deseado, float peso, boolean equipo){
@@ -30,7 +28,7 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
         registro.put(UtilitiesDataBase.TablaPersona.PESO,peso);
         registro.put(UtilitiesDataBase.TablaPersona.EQUIPO,equipo);
 
-        db.insert(UtilitiesDataBase.TablaPersona.TABLE_NAME,null,registro);
+        db.insert(UtilitiesDataBase.TablaPersona.TABLE_NAME,null, registro);
     }
 
     public  void  onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
