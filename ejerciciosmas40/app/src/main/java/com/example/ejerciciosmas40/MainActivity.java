@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         personaDAO = new PersonaDAO(getApplicationContext());
 
         if(personaDAO.isPersonaRegistered()){
-           Intent intent = new Intent(getApplicationContext(), TestActivity.class);
-           intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-           startActivity(intent);
+            Intent intent = new Intent(getApplicationContext(), ActivityVideoPlayer.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         }
 
         persona  = new Persona(1, 0, 0, 0, "", "", "", 0.0f, false);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view){
-       fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction = getSupportFragmentManager().beginTransaction();
         switch (view.getId()){
             case R.id.informationFragmentButton:
                 fragmentTransaction.replace(R.id.fragmentContainer, userPersonalDataFragment);
@@ -65,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.exerciseTypeButton:
                 try {
                     long result = personaDAO.insertarPersona(persona);
-                    Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ActivityVideoPlayer.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(), "Usuario registrado "+ result, Toast.LENGTH_SHORT).show();
                 }catch(Exception e){
                     Log.e("DATABASE EXCEPTION", e.toString());
-            }
+                }
                 break;
         }
         fragmentTransaction.commit();

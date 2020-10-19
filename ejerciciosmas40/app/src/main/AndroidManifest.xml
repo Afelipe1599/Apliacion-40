@@ -23,6 +23,7 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".ActivityVideoPlayer"/>
     </application>
 
 </manifest>
