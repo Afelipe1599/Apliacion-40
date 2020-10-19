@@ -26,6 +26,7 @@ public class UserPersonalDataFragment extends Fragment {
     Button button;
     EditText userNameEditText, userAgeEditText, userHeightEditText, userWeightEditText;
     ArrayList<EditText> editTexts = new ArrayList<>();
+    boolean isAnyEmpty;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -67,39 +68,46 @@ public class UserPersonalDataFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_user_personal_data, container, false);
-        userNameEditText = view.findViewById(R.id.editTextUserName);
-        userAgeEditText = view.findViewById(R.id.editTextUserAge);
-        userHeightEditText = view.findViewById(R.id.editTextUserHeight);
-        userWeightEditText = view.findViewById(R.id.editTextUserWeight);
-        button = view.findViewById(R.id.buttonNextupd);
-        editTexts.add(userNameEditText);
-        editTexts.add(userAgeEditText);
-        editTexts.add(userHeightEditText);
-        editTexts.add(userWeightEditText);
 
-        button.setOnClickListener(new View.OnClickListener() {
+
+
+        userNameEditText = (EditText)view.findViewById(R.id.editTextUserName);
+        userHeightEditText = (EditText)view.findViewById(R.id.editTextUserHeight);
+        userWeightEditText = (EditText)view.findViewById(R.id.editTextUserWeight);
+        userAgeEditText = (EditText)view.findViewById(R.id.editTextUserAge);
+
+        editTexts.add((EditText)view.findViewById(R.id.editTextUserName));
+        editTexts.add((EditText)view.findViewById(R.id.editTextUserHeight));
+        editTexts.add((EditText)view.findViewById(R.id.editTextUserWeight));
+        editTexts.add((EditText)view.findViewById(R.id.editTextUserAge));
+
+        final MainActivity activity = (MainActivity)getActivity();
+
+        Button userPersonalDataButton = view.findViewById(R.id.userPersonalDataFragmentButton);
+
+        userPersonalDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean isAnyEmpty = false;
+                isAnyEmpty=false;
                 for(EditText editText : editTexts){
                     if(editText.getText().toString().isEmpty()){
-                        isAnyEmpty = true;
                         editText.setError("Este campo es obligatorio");
+                        isAnyEmpty = true;
                     }
                 }
-
                 if(!isAnyEmpty){
-                    Intent intent = new Intent(getActivity(), ExerciseFrequencyActivity.class);
-                    startActivity(intent);
-                    Activity activity = getActivity();
+                    activity.persona.setNombre(userNameEditText.getText().toString());
+                    activity.persona.setEdad(Integer.parseInt(userAgeEditText.getText().toString()));
+                    activity.persona.setAltura(Integer.parseInt(userHeightEditText.getText().toString()));
+                    activity.persona.setPeso(Float.parseFloat(userWeightEditText.getText().toString()));
+                    Toast.makeText(getActivity().getApplicationContext(), "Datos registrados", Toast.LENGTH_SHORT).show();
+                    activity.onClick(view);
                 }
             }
         });
-
         return view;
     }
 }

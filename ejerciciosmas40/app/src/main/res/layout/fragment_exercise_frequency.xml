@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseFrequencyFragment"
+    android:id="@+id/exercise_frequency_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/informacion_personal"
+            android:tint="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/userDataLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/exercise_freq_str"
+            android:textColor="@color/primaryText"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/exerciseFrequencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:entries="@array/exercise_freq_array"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/exerciseFrequencyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:text="@string/next_button"
+            android:background="@drawable/rounded_corners"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="11dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</FrameLayout>

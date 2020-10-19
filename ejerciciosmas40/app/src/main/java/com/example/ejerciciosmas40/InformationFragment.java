@@ -67,14 +67,14 @@ public class InformationFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_information, container, false);
 
-        nextButton = view.findViewById(R.id.nextButton);
+        nextButton = view.findViewById(R.id.informationFragmentButton);
 
         nextButton.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), UserPersonalDataActivity.class);
-                startActivity(intent);
+               MainActivity activity = (MainActivity)getActivity();
+               activity.onClick(view);
             }
         });
         return view;
