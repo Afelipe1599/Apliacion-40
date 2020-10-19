@@ -53,11 +53,6 @@ public class ActivityVideoPlayer extends AppCompatActivity implements Navigation
         YouTubePlayerView video;
 
 
-
-        etiNombre = itemView.findViewById(R.id.nombreEjercicio);
-        etiDescripcion = itemView.findViewById(R.id.descripcionEjercicio);
-        video = (YouTubePlayerView) itemView.findViewById(R.id.videoplayer);
-
         llenarejercicios();
 
         //adaptadorVideos adapter = new adaptadorVideos(listaEjercicios);
