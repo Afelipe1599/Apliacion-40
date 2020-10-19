@@ -33,4 +33,9 @@
     <string name="yoga_str">Ha seleccionado <b>Yoga</b></string>
     <string name="genericos_str">Ha seleccionado ejercicios <b>Genericos</b></string>
     <string name="finished_str">Finalizar</string>
+    <string name="nav_abierto">Barra Lateral Abierta</string>
+    <string name="nav_cerrado">Barra Lateral Cerrada</string>
+    <string name="dificulty_item">Cambiar nivel</string>
+    <string name="myprofile_item">Mi perfil</string>
+    <string name="exercise_type_item">Cambiar tipo de ejercicio</string>
 </resources>
