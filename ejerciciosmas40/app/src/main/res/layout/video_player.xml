@@ -6,7 +6,8 @@
 
     android:orientation="vertical">
 
-
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -97,7 +98,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/componente_86___1"
             android:rotationX="0"
-            android:translationY="-153dp" />
+            android:translationY="-250dp" />
 
         <Button
             android:id="@+id/calendario"
@@ -107,7 +108,7 @@
             android:layout_marginTop="320dp"
             android:background="@drawable/componente_87___1"
             android:rotationX="0"
-            android:translationY="-130dp" />
+            android:translationY="-250dp" />
 
 
         <Button
@@ -118,8 +119,7 @@
             android:layout_marginTop="320dp"
             android:background="@drawable/componente_88___1"
             android:rotationX="0"
-            android:translationX="10dp"
-            android:translationY="-130dp" />
+            android:translationY="-250dp" />
 
 
         <Button
@@ -130,8 +130,7 @@
             android:layout_marginTop="320dp"
             android:background="@drawable/grupo_534"
             android:rotationX="0"
-            android:translationX="-10dp"
-            android:translationY="-130dp" />
+            android:translationY="-250dp" />
 
     </LinearLayout>
 
