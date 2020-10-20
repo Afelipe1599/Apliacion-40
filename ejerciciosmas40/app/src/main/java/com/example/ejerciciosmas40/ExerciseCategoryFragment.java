@@ -83,7 +83,7 @@ public class ExerciseCategoryFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 textViewSeleccion.setText(R.string.yoga_str);
-                tipoEjercicio = "Yoga";
+                tipoEjercicio = "YOGA";
 
             }
         });
@@ -91,7 +91,7 @@ public class ExerciseCategoryFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 textViewSeleccion.setText(R.string.aerobicos_str);
-                tipoEjercicio = "Aerobicos";
+                tipoEjercicio = "AEROBICOS";
             }
         });
 
@@ -99,7 +99,7 @@ public class ExerciseCategoryFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 textViewSeleccion.setText(R.string.genericos_str);
-                tipoEjercicio = "Genericos";
+                tipoEjercicio = "GENERICOS";
             }
         });
 

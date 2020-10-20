@@ -7,8 +7,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReportsActivity"
-            android:exported="true"></activity>
+        <activity android:name=".ReportsActivity"></activity>
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -23,7 +22,6 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"></activity>
-        <activity android:name=".ActivityVideoPlayer"/>
     </application>
 
 </manifest>
