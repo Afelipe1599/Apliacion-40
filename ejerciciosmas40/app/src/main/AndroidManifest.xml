@@ -8,6 +8,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:roundIcon="@mipmap/ic_launcher_foreground">
+        <activity android:name=".CalendarioActivity"></activity>
         <activity android:name=".ReportsActivity"></activity>
         <activity
             android:name=".SplashActivity"

@@ -27,7 +27,7 @@ import com.example.ejerciciosmas40.PersonaDAO;
 
 public class TestActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     Persona persona;
-    Button buttonReport, nextButton, previousButton;
+    Button buttonReport, nextButton, previousButton,calendario;
     YouTubePlayerView youTubePlayerView;
     String categoria;
     Ejercicio[] ejercicios = resources.banco_ejercicios;
@@ -67,6 +67,16 @@ public class TestActivity extends AppCompatActivity implements NavigationView.On
         userNameTextView.setText("Hola "+ persona.getNombre() + ", esta sera tu rutina de hoy");
 
         buttonReport = findViewById(R.id.yo);
+        calendario = findViewById(R.id.calendario);
+
+        calendario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CalendarioActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         buttonReport.setOnClickListener(new View.OnClickListener() {
             @Override
