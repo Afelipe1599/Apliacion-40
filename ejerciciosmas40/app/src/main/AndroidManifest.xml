@@ -6,15 +6,9 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-<<<<<<< Updated upstream
-        android:theme="@style/AppTheme">
-        <activity android:name=".ReportsActivity"
-            android:exported="true"></activity>
-=======
         android:theme="@style/AppTheme"
         android:roundIcon="@mipmap/ic_launcher_foreground">
         <activity android:name=".ReportsActivity"></activity>
->>>>>>> Stashed changes
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
