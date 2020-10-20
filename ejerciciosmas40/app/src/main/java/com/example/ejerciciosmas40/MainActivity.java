@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.exerciseTypeButton:
                 try {
                     long result = personaDAO.insertarPersona(persona);
-                    Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), ActivityVideoPlayer.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(), "Usuario registrado "+ result, Toast.LENGTH_SHORT).show();

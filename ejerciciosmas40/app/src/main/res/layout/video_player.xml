@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Hola Yamilet, esta será tu rutina de hoy"
+                android:text="WHEN HACES TUS MOMOS EN APPS"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -41,13 +41,13 @@
                 android:translationX="10dp"
                 app:autoPlay="false"
                 app:showYouTubeButton="false"
-                app:videoId="-QYqhmQj_ZI" />
+                app:videoId="R1cVHp8Lxzk" />
 
             <TextView
                 android:id="@+id/nombreEjercicio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre"
+                android:text="PERO TE TERMINAN BANEANDO"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="15dp"
-                android:text="Descripcion" />
+                android:text="OH MI LENTE DE CONTACTO" />
 
             <Button
                 android:id="@+id/anterior"
