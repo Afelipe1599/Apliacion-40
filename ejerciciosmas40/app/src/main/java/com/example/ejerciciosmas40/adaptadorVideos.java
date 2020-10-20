@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ejerciciosmas40.models.ejercicio;
+import com.example.ejerciciosmas40.models.Ejercicio;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
@@ -17,17 +17,17 @@ import java.util.ArrayList;
 
 public class adaptadorVideos extends RecyclerView.Adapter<adaptadorVideos.ViewHolderVideos> {
 
-    ArrayList<ejercicio> listaVideos;
+    ArrayList<Ejercicio> listaVideos;
 
 
-    public adaptadorVideos(ArrayList<ejercicio> listaVideos) {
+    public adaptadorVideos(ArrayList<Ejercicio> listaVideos) {
         this.listaVideos = listaVideos;
     }
 
     @NonNull
     @Override
     public ViewHolderVideos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.video_player,null,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_test,null,false);
         return new ViewHolderVideos(view);
     }
 

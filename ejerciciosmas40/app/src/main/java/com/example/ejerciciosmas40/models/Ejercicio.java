@@ -1,13 +1,13 @@
 package com.example.ejerciciosmas40.models;
 
-public class ejercicio {
+public class Ejercicio {
     private String nombre;
     private String id;
     private String descripcion;
     private String dificultad;
     private String categoria;
 
-    public ejercicio(String nombre, String id, String descripcion, String dificultad, String categoria) {
+    public Ejercicio(String nombre, String id, String descripcion, String dificultad, String categoria) {
         this.nombre = nombre;
         this.id = id;
         this.descripcion = descripcion;
@@ -15,7 +15,7 @@ public class ejercicio {
         this.categoria = categoria;
     }
 
-    public ejercicio(){
+    public Ejercicio(){
 
     }
 
