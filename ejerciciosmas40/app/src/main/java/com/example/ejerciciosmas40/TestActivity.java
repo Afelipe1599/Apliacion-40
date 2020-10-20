@@ -72,6 +72,8 @@ public class TestActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ReportsActivity.class);
+                intent.putExtra("userHeight", persona.getAltura());
+                intent.putExtra("userWeight", persona.getPeso());
                 startActivity(intent);
             }
         });
@@ -83,8 +85,6 @@ public class TestActivity extends AppCompatActivity implements NavigationView.On
                youTubePlayerView.getYouTubePlayerWhenReady(new YouTubePlayerCallback() {
                    @Override
                    public void onYouTubePlayer(@NotNull YouTubePlayer youTubePlayer) {
-                       Log.d("INDEX", String.valueOf(index));
-                       Log.d("ARRAY SIZE", String.valueOf(ejerciciosAerobicos.size()));
                       if(categoria.trim().equals("AEROBICOS")){
                           if(index < ejerciciosAerobicos.size()-1){
                               index++;
@@ -123,8 +123,6 @@ public class TestActivity extends AppCompatActivity implements NavigationView.On
                     @Override
                     public void onYouTubePlayer(@NotNull YouTubePlayer youTubePlayer) {
                         Ejercicio ejercicio=null;
-                        Log.d("INDEX", String.valueOf(index));
-                        Log.d("ARRAY SIZE", String.valueOf(ejerciciosAerobicos.size()));
                         if(categoria.trim().equals("AEROBICOS")){
                             if(index > 0){
                                 index--;
@@ -158,6 +156,11 @@ public class TestActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
 
+        switch (itemId){
+            case R.id.dificultyItem:
+                Intent intent = new Intent(getApplicationContext(), ChangeExerciseActivity.class);
+                startActivity(intent);
+        }
         return true;
     }
 

@@ -1,6 +1,11 @@
 package com.example.ejerciciosmas40.util;
 
 import com.example.ejerciciosmas40.models.Ejercicio;
+import com.example.ejerciciosmas40.models.Registro;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class resources {
 
@@ -117,12 +122,5 @@ public class resources {
                     "AVANZADO",
                     "YOGA"),
 
-
-
-
     };
-
-
-
-
 }

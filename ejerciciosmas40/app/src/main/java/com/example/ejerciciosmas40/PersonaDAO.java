@@ -58,8 +58,14 @@ public class PersonaDAO {
 
             }catch (Exception e){
                 Log.e("getPersona", e.getMessage());
+                return null;
             }
         }
         return persona;
+    }
+
+    public void updatePersonaExercise(String exerciseType){
+        String query="UPDATE "+UtilitiesDataBase.TablaPersona.TABLE_NAME+" SET "+UtilitiesDataBase.TablaPersona.EJ_DESEADO +" = '"+ exerciseType+"'";
+        db.rawQuery(query, null);
     }
 }

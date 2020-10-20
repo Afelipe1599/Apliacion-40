@@ -112,7 +112,7 @@
                     android:layout_gravity="center"
                     android:layout_marginRight="20dp"
                     android:orientation="horizontal"
-                    android:gravity="center"
+                    android:gravity="bottom"
                     android:layout_weight="1">
 
                     <Button

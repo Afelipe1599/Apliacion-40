@@ -9,23 +9,29 @@ import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.ejerciciosmas40.models.Ejercicio;
+import com.example.ejerciciosmas40.models.Registro;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.data.Entry;
-
+import com.example.ejerciciosmas40.util.resources;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReportsActivity extends AppCompatActivity {
     int weightDiff, firstValue, lastValue;
-    double imc;
-
+    double imc, userActualWeight, userHeight;
+    Registro[] registros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reports);
+
+        Bundle bundle = getIntent().getExtras();
+        userHeight = bundle.getInt("userHeight");
+        userActualWeight = bundle.getFloat("userWeight");
 
         int[] yentries = new int[]{74, 72, 70, 72, 68, 67, 65};
         firstValue = yentries[0];
@@ -41,7 +47,7 @@ public class ReportsActivity extends AppCompatActivity {
 
         weightDiff = firstValue-lastValue;
 
-        imc = lastValue/Math.pow(1.6, 2);
+        imc = userActualWeight/Math.pow(userHeight/100, 2);
 
         TextView imcTextView = findViewById(R.id.imcTextView);
         imcTextView.setText(String.valueOf(Math.round(imc)));

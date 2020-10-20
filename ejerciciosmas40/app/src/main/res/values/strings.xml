@@ -26,7 +26,7 @@
     </string-array>
 
     <string name="equipment_str">Poseo implementos de ejercicio</string>
-    <string name="finished_button">Registrar datos</string>
+    <string name="register_button">Registrar datos</string>
 
     <string name="exercise_type_str">¿Cual tema te gustaria trabajar? Selecciona una de las siguientes opciones:</string>
     <string name="aerobicos_str">Ha seleccionado ejercicios <b>Aerobicos</b></string>
@@ -38,4 +38,6 @@
     <string name="dificulty_item">Cambiar nivel</string>
     <string name="myprofile_item">Mi perfil</string>
     <string name="exercise_type_item">Cambiar tipo de ejercicio</string>
+    <string name="change_exercise_type_str">Seleccione el nuevo tipo de ejercicio que desea realizar</string>
+    <string name="finished_button">Finalizar</string>
 </resources>
