@@ -60,7 +60,64 @@ public class resources {
                     "H-ilNnpmQsc",
                     "10 minutos - Quemando grasa obstinada del vientre",
                     "AVANZADO",
-                    "AEROBICOS")
+                    "AEROBICOS"),
+            new ejercicio("YOGA PARA PRINCIPIANTES | DIA 1 Todo cuerpo - 25 min | Elena Malova",
+                    "a01D1PzTVFc",
+                    "- practica yoga tantas veces a la semana cuanto sea cómodo para ti, importante es disfrutar el proceso\n" +
+                            "- puedes realizar esas rutinas tanto en la mañana como en la noche",
+                    "BASICOS",
+                    "YOGA"),
+            new ejercicio("Yoga para principiantes.",
+                    "1J8CRcoFekE",
+                    "Hacer yoga puede convertirse en una de las claves para nuestro bienestar. Dicen que para cada cosa hay una edad, pero no para empezar a sentirse bien. \n" +
+                            "\n" +
+                            "En este vídeo tienes algunos de los ejercicios más básicos para empezar a cogerle el gustillo a este arte milenario. No requieren conocimientos previos ni una gran forma física, aunque deben hacerse escuchando al cuerpo y sin forzar.",
+                    "BASICOS",
+                    "YOGA"),
+            new ejercicio("Yoga para RELAJAR cuello y hombros | Aliviar dolores cervicales | Elena Malova",
+                    "aOW9fND3lFc",
+                    "ejercicios para aliviar dolores de cullo y hombros, vamos a relajar musculos, estirar, respirar y mejorar circulación. Esta secuencia puedes hacer tanto en la mañana como en la noche, durante el día, siempre cuando sientes que es necesario relajar tus cervicales.",
+                    "BASICOS",
+                    "YOGA"),
+            new ejercicio("Yoga FLOW para intermedios | Clase 30 min en español | Elena Malova",
+                    "r42IhQ5WHz0",
+                    "Haz yoga en cualquier hora del día, con el estómago vacio dejando pasar por lo menos 2 horas después de la última comida. Haz yoga de 3 a 6 veces por semana, pero escucha el cuerpo y toma días libres para recuperación cuando sea necesario. Para mujeres durante la menstruación recomiendo hacer rutina especial",
+                    "INTERMEDIO",
+                    "YOGA"),
+            new ejercicio("YOGA EN CASA PARA TODO CUERPO | NIVEL INTERMEDIO INTENSO | ELENA MALOVA",
+                    "zyFoxUx22g8",
+                    "*Las rutinas puedes hacer solo o acompañado, apto para los hombres y mujeres, para la gente mayor de 18 años sin restrición médica alguna (los menores deben entrenar bajo supervisión de un adulto). Consulte a un doctor antes de comenzar cualquier programa de ejercicios\n" +
+                            "*Ni Elena Malova ni cualquiera otra persona del canal MalovaElena será responsable de cualquier herida o lesión sostenida entrenándose en su casa, gimnasio o en otra parte.",
+                    "INTERMEDIO",
+                    "YOGA"),
+            new ejercicio("Yoga para la Mañana (20 min) - Nivel Intermedio",
+                    "6KYl_d-Qijw",
+                    "Yoga para la Mañana (20 min) - Nivel Intermedio\n" +
+                            "**NUEVO** MANUAL DE LUZ 2020 – GRATUITO\n" +
+                            "- Aprenderás a utilizar la energía que trae este 2020 a tu favor\n" +
+                            "- Recordarás cuáles son tus herramientas divinas de creación\n" +
+                            "- Tiempo de recordar tu poder personal y utilizarlo",
+                    "INTERMEDIO",
+                    "YOGA"),
+            new ejercicio("Yoga Vinyasa INTERMEDIO-AVANZADO todo cuerpo en 70 min | MalovaElena",
+                    "EC9sC0suyzM",
+                    "*Las rutinas puedes hacer solo o acompañado, apto para los hombres y mujeres, para la gente mayor de 18 años sin restrición médica alguna (los menores deben entrenar bajo supervisión de un adulto). Consulte a un doctor antes de comenzar cualquier programa de ejercicios\n" +
+                            "*Ni Elena Malova ni cualquiera otra persona del canal MalovaElena será responsable de cualquier herida o lesión sostenida entrenándose en su casa, gimnasio o en otra parte.",
+                    "AVANZADO",
+                    "YOGA"),
+            new ejercicio("Clase FUERTE nivel intermedio avanzado | Brenda Yoga",
+                    "luOsqGIzbk8",
+                    "Esta es una clase nivel intermedio avanzado donde conseguirás fuerza y flexibilidad para lograr koundinyasana\n",
+                    "AVANZADO",
+                    "YOGA"),
+            new ejercicio("Yoga dinámico nivel III avanzado 55 min | Día 11 Cuerpo Perfecto en 4 semanas",
+                    "FqeubkXNXck",
+                    "*Las rutinas puedes hacer solo o acompañado, apto para los hombres y mujeres, para la gente mayor de 18 años sin restrición médica alguna (los menores deben entrenar bajo supervisión de un adulto). Consulte a un doctor antes de comenzar cualquier programa de ejercicios\n" +
+                            "*Ni Elena Malova ni cualquiera otra persona del canal MalovaElena será responsable de cualquier herida o lesión sostenida entrenándose en su casa, gimnasio o en otra parte.\n",
+                    "AVANZADO",
+                    "YOGA"),
+
+
 
 
     };
